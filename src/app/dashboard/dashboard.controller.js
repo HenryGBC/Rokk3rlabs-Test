@@ -3,16 +3,17 @@
 
   angular
     .module('rokkerlabs')
-    .controller('MainController', MainController);
+    .controller('DashboardController', DashboardController);
 
   /** @ngInject */
-  function DashboardController($timeout, webDevTec, toastr) {
+  function DashboardController($timeout) {
     var vm = this;
 
 
     activate();
-
+    
     function activate() {
+      vm.hideBar = false;
       console.log('active');
     }
 

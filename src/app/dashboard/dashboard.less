@@ -1,0 +1,100 @@
+.header-navbar{
+	background: #2f323a;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.logo{
+		width: 264px;
+		background-color: #1e2025;
+		padding: 1em;
+		text-align: center;
+		.before-xs({
+			width: 180px;
+		})
+	}
+
+	.user{
+		padding: 1em;
+		span{
+			margin-right: 10px;
+			font-weight: 600;
+			font-size: 0.9em;
+		}
+
+		i{
+			cursor: pointer;
+		}
+	}
+}
+
+.content-dashboard{
+	display: flex;
+	 height: 100vh;
+	.navbar-left{
+		background-color: #2f323a;
+		color: #fff;
+		width: 264px;
+		transition: all 0.2s ease-in-out;
+		ul{
+			margin-top: 2rem;
+			li{
+				a{
+					color: #fff;
+					display: block;
+					padding: 14px 20px;
+					span{
+						font-weight: 600;
+						font-size: 0.9em;
+					}
+				}
+				i{
+					margin-right: 10px;
+					color: #6B6BCA;
+					font-size: 0.9em;
+				}
+
+				&:hover{
+					background-color: #1e2025;
+				}
+			}
+		}
+		&__active{
+			background-color: #1e2025;
+		}
+		
+	}
+
+	.navbar-hide{
+		width: 55px;
+		ul{
+			li{
+				a{
+					span{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.content{
+		width: 100%;
+		padding: 3em;
+		box-sizing: border-box;
+		background-color: #f5f5fa;
+		overflow-y: auto;
+
+		.before-xs({
+			padding: 0.5em;
+		});
+	}
+}
+.line-chart{
+	background: white;
+    padding: 40px;
+    border: solid 1px #e7e7ed;
+}
+.chart-line{
+	width: 80% !important;
+	height: 200px !important;
+}

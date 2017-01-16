@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('rokkerlabs', ['ngCookies', 'ngTouch', 'ui.router', 'toastr']);
+    .module('rokkerlabs', ['ngCookies', 'ngTouch', 'ui.router', 'toastr', 'chart.js']);
 
 })();

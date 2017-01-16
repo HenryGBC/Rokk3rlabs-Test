@@ -1,6 +1,55 @@
 <div class="container">
   <div class="header-navbar">
-    <h1>Rock3Labs</h1>
+    <div class="logo">
+      <img src="assets/images/logo-mobile.png" alt="">
+    </div>
+    <div class="user">
+      <span>Admin Name</span>
+      <i class="fa fa-cog" aria-hidden="true"></i>
+    </div>
+  </div>
+
+
+  <div class="content-dashboard">
+    <div class="navbar-left" ng-class="{'navbar-hide': dashboard.hideBar}">
+       <ul>
+         <li>
+          <a ui-sref=".analytics"
+              ui-sref-active="navbar-left__active">
+            <i class="fa fa-line-chart" aria-hidden="true"></i>
+            <span>Analytics</span>
+          </a>
+         </li>
+          <li>
+          <a ui-sref=".news"
+             ui-sref-active="navbar-left__active">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            <span>News</span>
+          </a>
+         </li>
+          <li>
+          <a href="#">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            <span>Board Brief</span>
+          </a>
+         </li>
+          <li>
+          <a href="#">
+            <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <span>Brief Case</span>
+          </a>
+         </li>
+         <li  >
+          <a href="javascript:void(0)" ng-click="dashboard.hideBar = !dashboard.hideBar">
+            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            <span>Close Menu</span>
+          </a>
+         </li>
+       </ul>
+    </div>
+    <div class="content">
+      <div ui-view></div>
+    </div>
   </div>
   <!--<div>
     <acme-navbar creation-date="main.creationDate"></acme-navbar>
